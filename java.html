@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="aula.css">
+    <title> aula javasript</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        /*  var nome;
+          var conf;
+          nome = prompt("qual seu nome?")
+          conf = confirm("seu nome é " + nome + "?")
+          if (conf = true) { alert("tiroso") } else { alert("blz") }*/
+
+
+    </script>
+
 </head>
+
 <body>
-    
+    <h3 id="idh3">aula de lpw</h3>
+    <p id="idp"></p>
+    <p id="outrop"></p>
+    <h2></h2>
+    <div id="final"> finalizando conteudo de getElement</div>
+    <div id="contato"> entre em contato</div>
+    <script>
+        var paragrafo = document.getElementById("idp")
+        paragrafo.innerText = "texto escrito pelo js"
+
+        var h3 = document.getElementById("idh3");
+        //alert(h3.innerText)
+        //innertext pega o texto
+        //innerhtml pega o html
+
+
+        var outrop = document.getElementById("outrop")
+        outrop.innerText = h3.innerText;
+
+        var h2 = document.getElementsByTagName("h2")[0];
+        h2.innerText = "manipulando o Dom";
+        var final = document.querySelector("div#final")
+        alert(final.innerText);
+        final.innerText =final.innerText + ' querySelector'
+        var contato = document.getElementsByClassName('contato')[0];
+        contato.style.color ='red';
+    </script>
 </body>
+
 </html>
